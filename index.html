@@ -15,7 +15,13 @@
       <li>しょうゆ（大さじ1）</li>
       <li>みりん（大さじ1）</li>
       <li>塩（少々）</li>
-      
+      <!-- <li>
+        <ul>
+          <li>あ</li>
+          <li>い</li>
+          <li>う</li>
+        </ul>
+      </li> -->
     </ul>
 
     <h2>番号付きリスト</h2>
@@ -59,11 +65,6 @@
       </tr>
     </table>
 
-    <ul>
-
-
-    </ul>
-
     <h4>縦方向に結合</h4>
     <table border="1">
       <tr>
@@ -78,62 +79,65 @@
         <td>セル 6</td>
       </tr>
     </table>
+
     <h2>フォーム</h2>
     <form>
-        
-        <p>名前: <input type="text" placeholder="姓 名"></p>
+      <h3>1行入力欄</h3>
+      <h4>通常テキスト</h4>
+      <p>名前：<input type="text" placeholder="（例）山田 太郎"></p>
 
-        <p>メールアドレス : <input type="email"></p>
+      <h4>メールアドレス形式</h4>
+      <p>メールアドレス：<input type="email"></p>
 
-        <p>電話番号 : <input type="tel"></p>
+      <h4>電話番号形式</h4>
+      <p>電話番号：<input type="tel"></p>
 
-        <p>
-            性別 :
-            <input type="radio" name="gender" value = "男">男
-            <input type="radio" name="gender" value = "女">女
-            <input type="radio" name="gender" value = "その他">その他
-        </p>
+      <h3>ラジオボタン</h3>
+      <p>
+        性別：
+        <input type="radio" name="gender" value="男" checked> 男
+        <input type="radio" name="gender" value="女"> 女
+        <input type="radio" name="gender" value="その他"> その他
+      </p>
+      <p>
+        朝ご飯を食べましたか？
+        <input type="radio" name="bf" value="はい" checked> はい
+        <input type="radio" name="bf" value="いいえ"> いいえ
+      </p>
 
-        <p>
-            朝ご飯を食べましたか？
-            <input type="radio" name="bf" value = "はい">はい
-            <input type="radio" name="bf" value = "いいえ">いいえ
-        </p>
+      <h3>チェックボックス</h3>
+      <p>
+        好きな色：
+        <input type="checkbox" name="color" value="赤" checked> 赤
+        <input type="checkbox" name="color" value="青"> 青
+        <input type="checkbox" name="color" value="黄"> 黄
+        <input type="checkbox" name="color" value="緑"> 緑
+      </p>
 
-        <p>
-            好きな色？
-            <input type="checkbox" name="color" value = "赤">赤
-            <input type="checkbox" name="color" value = "青">青
-            <input type="checkbox" name="color" value = "黄">黄
-            <input type="checkbox" name="color" value = "緑">緑
-        </p>
+      <h3>送信ボタン</h3>
+      <!-- <p><input type="submit" value="送信する"></p> -->
 
-        <p><input type="image" src="https://thumb.ac-illust.com/ab/abcb64eb4211e5d1751e06cb1d298603_t.jpeg" width="100"></p>
+      <p><input type="image" src="submit.jpg" alt="送信" width="200"></p>
+      <p><input type="image" src="submit2.jpg" alt="Send" width="200"></p>
 
-        <!-- <p><input type="submit" value="送信する"></p> -->
+      <!-- <p><button type="submit">送信</button></p> -->
 
-        <!-- <p><button type="submit">送信</button></p> -->
+      <h3>セレクトボックス</h3>
+      <p>
+        血液型
+        <select name="bloodtype">
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="O">O</option>
+          <option value="AB">AB</option>
+          <option value="不明" selected>不明</option>
+        </select>
+      </p>
 
-        <p>血液型
-            <select name="bloodtype">
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-                <option value="AB">AB</option>
-                <option value="不明">不明</option>
-            </select>
-
-        </p>
-
-        <p>
-            <textarea cols="30" row="10">
-                メッセージを入力
-            </textarea>
-        </p>
-
-
+      <h3>複数行入力欄</h3>
+      <p>
+        <textarea cols="30" rows="10" placeholder="メッセージを入力"></textarea>
+      </p>
     </form>
-
-
   </body>
 </html>
