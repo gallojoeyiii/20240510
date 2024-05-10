@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+ul li {
+  /* list-style-type: square; */
+}
+
+ol li {
+  /* list-style-type: lower-greek; */
+  /* list-style-type: upper-roman; */
+}
+
+th,
+td {
+  padding: 8px;
+}
+th {
+  background: darkblue;
+  color: white;
+}
+
+th[colspan="2"] {
+    background: darkgreen;
+    color: white
+}
+
+td[rowspan="2"] {
+    background: darkred;
+    color: white
+}
